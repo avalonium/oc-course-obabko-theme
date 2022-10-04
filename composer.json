@@ -1,0 +1,22 @@
+{
+  "name": "avalonium/oc-course-obabko",
+  "type": "october-theme",
+  "description": "Course Obabko",
+  "homepage": "https://github.com/avalonium/oc-course-obabko-theme",
+  "keywords": ["october", "octobercms"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Avalonium",
+      "email": "hello@avalonium.site"
+    }
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  }
+}

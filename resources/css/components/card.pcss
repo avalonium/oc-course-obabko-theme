@@ -1,0 +1,78 @@
+.dot {
+
+}
+
+
+.card-zoom {
+
+    @apply shadow-custom;
+
+    &:hover {
+
+        @apply cursor-pointer;
+
+        .card-zoom-text {
+            @apply bg-[#BAD4F2];
+        }
+
+        .card-zoom-image img {
+            @apply scale-125;
+        }
+    }
+
+    &-image {
+        @apply h-full overflow-hidden;
+    }
+
+    &-text {
+        @apply bg-white p-4 text-center text-2xl font-semibold leading-8;
+    }
+}
+
+.card-zoom-text, .card-zoom-image img {
+    @apply transition-all duration-500 ease-in-out;
+}
+
+.card-informer {
+    @apply relative py-8 px-6 bg-white rounded-md shadow-custom;
+    @apply after:block after:absolute after:top-0 after:left-[33px] after:h-9 after:border-l-2 after:border-dashed after:border-blue-900;
+
+    &-title {
+        @apply relative ml-9 mb-4 text-2xl font-semibold leading-8;
+        @apply before:block before:w-5 before:h-5 before:absolute before:top-1.5 before:-left-9 before:rounded-full before:bg-blue-200;
+        @apply after:block after:w-2.5 after:h-2.5 after:bg-emerald-100 after:absolute after:top-[11px] after:-left-[31px] after:rounded-full after:bg-blue-900;
+    }
+
+    &-list {
+        li {
+            @apply relative ml-9 mb-2 text-lg font-normal leading-7 last:mb-0;
+            @apply before:block before:w-2.5 before:h-2.5 before:bg-emerald-100 before:absolute before:top-[9px] before:-left-[31px] before:rounded-full before:bg-blue-200;
+        }
+    }
+
+    &-icon {
+        @apply w-[50px] h-[50px] absolute top-8 right-6;
+    }
+}
+
+
+.dot {
+    @apply flex items-center justify-center w-5 h-5 rounded-full bg-blue-200;
+    @apply before:flex before:w-2.5 before:h-2.5 before:rounded-full before:bg-blue-900;
+}
+
+
+.list-custom {
+    background: url('../images/test.png') rebeccapurple;
+
+    dt {
+        @apply text-2xl font-semibold mb-5;
+    }
+    dd {
+        @apply list-item;
+
+        & + dd {
+            @apply mt-3;
+        }
+    }
+}

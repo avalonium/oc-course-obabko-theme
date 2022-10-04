@@ -1,0 +1,40 @@
+<div class="flex flex-wrap -mx-3 mb-3">
+    <div class="w-full lg:w-3/5 p-3">
+        <h2 class="text-[44px] leading-[57px] mb-10 font-bold">Залишилися питання?</h2>
+        <p class="text-2xl font-semibold mb-5">Зв’язатись з координатором курсу</p>
+        <p class="text-lg font-normal mb-5">Координатор курсу від Up&Do World</p>
+        <p>Максим Тризна</p>
+        <a href="tel:380671806538">+38 067 180 65 38</a>
+    </div>
+    <div class="w-full lg:w-2/5 p-3">
+        <div class="bg-[#BAD4F2] px-5 md:px-16 py-10 md:py-20">
+            <h3 class="mb-5 text-center text-2xl font-semibold">Поставити питання</h3>
+            {{ form_ajax(__SELF__ ~ '::onTest', { id: __SELF__.id, validate: true }) }}
+                <div class="mb-3">
+                    {{ form_label('name', 'Ім’я', { "class": "form-label hidden" }) }}
+                    {{ form_text('name', '', { class: "form-input", placeholder: "Ім’я" }) }}
+                    <div data-validate-for="name" class="hidden mt-2 text-sm text-red-500"></div>
+                </div>
+                <div class="mb-3">
+                    {{ form_label('email', 'E-mail адреса', { "class": "form-label hidden" }) }}
+                    {{ form_email('email', '', { class: "form-input", placeholder: "E-mail адреса" }) }}
+                    <div data-validate-for="email" class="hidden mt-2 text-sm text-red-500"></div>
+                </div>
+                <div class="mb-3">
+                    {{ form_label('phone', 'Номер телефону', { "class": "form-label hidden" }) }}
+                    {{ form_text('phone', '', { class: "form-input", placeholder: "+38(___) ___ __ __" }) }}
+                    <div data-validate-for="phone" class="hidden mt-2 text-sm text-red-500"></div>
+                </div>
+                <div class="mb-3">
+                    {{ form_label('message', 'Повідомлення', { "class": "form-label hidden" }) }}
+                    {{ form_textarea('message', '', { class: "form-input", placeholder: "Питання", rows: "3" }) }}
+                    <div data-validate-for="message" class="hidden mt-2 text-sm text-red-500"></div>
+                </div>
+                <div class="">
+                    {{ form_submit("Поставити питання", { class: 'btn w-full' }) }}
+                    <p class="text-sm leading-6 mt-3">*Натискаючи кнопку “Поставити питання” я погоджуюсь на обробку моїх персональних даних.</p>
+                </div>
+            {{ form_close() }}
+        </div>
+    </div>
+</div>

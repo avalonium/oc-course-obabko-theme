@@ -1,0 +1,8 @@
+{% set activeLink = activeLink|default(this.page.id) %}
+{% set activeLinkClass = "bg-gray-900 text-white" %}
+{% set linkClass = "text-gray-300 hover:bg-gray-700 hover:text-white" %}
+
+<a href="{{ 'index'|page }}" class="px-3 py-2 rounded-md text-sm font-medium {{ activeLink == 'index' ? activeLinkClass : linkClass }}">Главная</a>
+<a href="{{ 'rules'|page }}" class="px-3 py-2 rounded-md text-sm font-medium {{ activeLink == 'rules' ? activeLinkClass : linkClass }}">Правила</a>
+<a href="{{ 'faq'|page }}" class="px-3 py-2 rounded-md text-sm font-medium {{ activeLink == 'faq' ? activeLinkClass : linkClass }}">FAQ</a>
+<a href="{{ 'feedback'|page }}" class="px-3 py-2 rounded-md text-sm font-medium {{ activeLink == 'feedback' ? activeLinkClass : linkClass }}">Обратная связь</a>

@@ -1,0 +1,36 @@
+##
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+
+    <head>
+        {% partial 'site/meta' %}
+    </head>
+
+    <body class="{{ 'page-'~this.page.id }} text-custom-black bg-custom-sky">
+
+        <!-- Header -->
+        <header id="layout-header" class="">
+            {% partial 'site/header' %}
+        </header>
+
+        <!-- Content -->
+        <main id="layout-content">
+            {% page %}
+        </main>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial 'site/footer' %}
+        </footer>
+
+        <!-- Scripts -->
+        <script src="{{ [
+            '@jquery',
+            '@framework',
+            '@framework.extras',
+            'assets/vendor/alpinejs/alpine.min.js',
+            'assets/js/app.js' ]|theme }}"></script>
+    </body>
+</html>
