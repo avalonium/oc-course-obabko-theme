@@ -1,0 +1,50 @@
+dl.list-custom {
+
+    @apply py-8 px-6 space-y-1 lg:space-y-3 bg-white rounded-md shadow-custom overflow-hidden;
+
+    dt {
+        @apply relative flex items-start text-lg lg:text-2xl font-semibold mb-5;
+        @apply before:block before:w-5 before:h-5 before:mt-1.5 before:mb-1.5 before:mr-3 before:bg-dot before:z-10;
+        @apply after:absolute after:bottom-full after:h-20 after:mx-[9px] after:-mb-4 after:border-l-2 after:border-dashed after:border-blue-900 after:z-0;
+    }
+    dd {
+        @apply flex items-start  lg:text-lg before:flex-none before:block before:ml-[5px] before:my-2.5 before:w-2.5 before:h-2.5 before:mr-5 before:rounded-full before:bg-blue-200;
+    }
+}
+
+dl.list-custom2 {
+
+    @apply font-normal space-y-4;
+
+    dt {
+        @apply lg:w-3/4 p-3.5 lg:pl-12 lg:-ml-12 lg:rounded-l-none mb-10 text-base text-center lg:text-left lg:text-2xl font-semibold uppercase tracking-wide bg-[#BAD4F2] rounded;
+    }
+    dd {
+        @apply relative lg:w-5/6 pl-10;
+        @apply before:block before:w-5 before:h-5 before:my-1 before:absolute before:top-0 before:left-0 before:bg-dot;
+        @apply lg:after:absolute lg:after:top-0 lg:after:right-full lg:after:my-[13px] lg:after:bottom-full lg:after:w-12 lg:after:border-t-2 lg:after:border-dashed lg:after:border-blue-900;
+    }
+}
+
+dl.list-custom3 {
+
+    @apply text-base lg:text-lg space-y-2;
+
+    dt {
+        @apply text-xl lg:text-2xl font-semibold mb-5;
+    }
+    dd {
+        @apply list-item;
+    }
+}
+
+ul.list-custom4 {
+
+    @apply text-lg;
+
+    li {
+        span.dot {
+            @apply flex-none block w-5 h-5 my-1 mr-3 bg-dot;
+        }
+    }
+}

@@ -15,8 +15,9 @@ RUN a2enmod rewrite expires && \
 
 # Install dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libfreetype6-dev libjpeg62-turbo-dev libpng-dev \
+    libfreetype6-dev libjpeg-dev libpng-dev libwebp-dev \
     libpq-dev libsqlite3-dev libzip-dev git-core zip unzip \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
     && docker-php-ext-install gd zip mysqli pdo_pgsql pdo_mysql \
     && rm -rf /var/lib/apt/lists/*
 
