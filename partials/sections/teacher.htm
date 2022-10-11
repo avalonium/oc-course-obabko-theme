@@ -14,7 +14,11 @@
     </div>
     <div class="w-full lg:w-2/5 p-6 lg:order-first">
         <div class="h-full">
-            <img src="{{ 'photo/teacher.png'|media }}" alt="Олександр Обабко">
+            <picture>
+                <source srcset="{{ 'photo/teacher.webp'|media }}" type="image/webp">
+                <source srcset="{{ 'photo/teacher.png'|media }}" type="image/png">
+                <img src="{{ 'photo/teacher.png'|media }}" alt="Олександр Обабко">
+            </picture>
         </div>
     </div>
 </div>

@@ -1,6 +1,7 @@
 const path = require('path');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
 
 module.exports = {
     stats: 'errors-only',
@@ -10,6 +11,7 @@ module.exports = {
     },
     plugins: [
         new WebpackNotifierPlugin({title: 'Webpack'}),
+        new ImageminWebpWebpackPlugin(),
         new BrowserSyncPlugin({
             proxy: 'localhost',
             files: [

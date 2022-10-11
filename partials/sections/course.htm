@@ -26,8 +26,16 @@
     </div>
     <div class="w-full lg:w-1/3">
         <div class="w-3/4 lg:w-full mx-auto">
-            <img class="w-auto h-auto max-h-full lg:hidden" src="{{ 'course/course-sm.png'|media }}" alt="Моделювання конструкцій">
-            <img class="w-auto h-auto max-h-full hidden lg:block" src="{{ 'course/course-md.png'|media }}" alt="Моделювання конструкцій">
+            <picture>
+                <source srcset="{{ 'course/course-sm.webp'|media }}" type="image/webp">
+                <source srcset="{{ 'course/course-sm.png'|media }}" type="image/png">
+                <img class="w-auto h-auto max-h-full lg:hidden" src="{{ 'course/course-sm.png'|media }}" alt="Моделювання конструкцій">
+            </picture>
+            <picture>
+                <source srcset="{{ 'course/course-md.webp'|media }}" type="image/webp">
+                <source srcset="{{ 'course/course-md.png'|media }}" type="image/png">
+                <img class="w-auto h-auto max-h-full hidden lg:block" src="{{ 'course/course-md.png'|media }}" alt="Моделювання конструкцій">
+            </picture>
         </div>
     </div>
 </div>
