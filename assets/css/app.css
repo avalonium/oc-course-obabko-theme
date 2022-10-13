@@ -2214,14 +2214,14 @@ ul.list-custom4 li span.dot {
 .bg-a-letter {
   background-image: url(../images/a-letter.gif);
 }
-.bg-main-sm {
-  background-image: url(../images/bg-main-sm.png);
-}
 .bg-main-line {
   background-image: url(../images/bg-main-line.png);
 }
 .bg-a-dots {
   background-image: url(../images/a-dots.gif);
+}
+.bg-main-sm {
+  background-image: url(../images/bg-main-sm.png);
 }
 .bg-cover {
   background-size: cover;
@@ -2232,11 +2232,11 @@ ul.list-custom4 li span.dot {
 .bg-auto {
   background-size: auto;
 }
-.bg-right-top {
-  background-position: right top;
-}
 .bg-left-top {
   background-position: left top;
+}
+.bg-right-top {
+  background-position: right top;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
@@ -2796,16 +2796,16 @@ ul.list-custom4 li span.dot {
     left: 0px;
   }
 
+    .lg\:bottom-3 {
+    bottom: 0.75rem;
+  }
+
     .lg\:bottom-0 {
     bottom: 0px;
   }
 
     .lg\:right-0 {
     right: 0px;
-  }
-
-    .lg\:bottom-3 {
-    bottom: 0.75rem;
   }
 
     .lg\:order-first {
@@ -2998,5 +2998,23 @@ ul.list-custom4 li span.dot {
 
     .lg\:leading-\[64px\] {
     line-height: 64px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .xl\:absolute {
+    position: absolute;
+  }
+
+  .xl\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .xl\:right-0 {
+    right: 0px;
+  }
+
+  .xl\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 }
