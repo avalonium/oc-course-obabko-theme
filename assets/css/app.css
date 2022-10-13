@@ -541,6 +541,22 @@ select {
         display: block !important;
     }
 
+    .custom-zoom-image img {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+    .custom-zoom-image img {
+  transition-duration: 150ms;
+}
+
+    .custom-zoom-image:hover img {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1879,6 +1895,9 @@ ul.list-custom4 li span.dot {
   white-space: nowrap;
   border-width: 0;
 }
+.invisible {
+  visibility: hidden;
+}
 .absolute {
   position: absolute;
 }
@@ -2002,8 +2021,14 @@ ul.list-custom4 li span.dot {
 .mb-24 {
   margin-bottom: 6rem;
 }
+.ml-3 {
+  margin-left: 0.75rem;
+}
 .mb-7 {
   margin-bottom: 1.75rem;
+}
+.ml-\[35px\] {
+  margin-left: 35px;
 }
 .block {
   display: block;
@@ -2073,6 +2098,9 @@ ul.list-custom4 li span.dot {
 }
 .w-\[414px\] {
   width: 414px;
+}
+.w-0 {
+  width: 0px;
 }
 .w-12 {
   width: 3rem;
@@ -2257,6 +2285,10 @@ ul.list-custom4 li span.dot {
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .px-3 {
   padding-left: 0.75rem;
@@ -2456,6 +2488,12 @@ ul.list-custom4 li span.dot {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
 }
+.group:hover .group-hover\:visible {
+  visibility: visible;
+}
+.group:hover .group-hover\:w-6 {
+  width: 1.5rem;
+}
 @media (min-width: 640px) {
 
   .sm\:w-1\/2 {
@@ -2488,6 +2526,10 @@ ul.list-custom4 li span.dot {
     display: block;
   }
 
+    .md\:flex {
+    display: flex;
+  }
+
     .md\:hidden {
     display: none;
   }
@@ -2506,6 +2548,20 @@ ul.list-custom4 li span.dot {
 
     .md\:w-1\/2 {
     width: 50%;
+  }
+
+    .md\:items-center {
+    align-items: center;
+  }
+
+    .md\:justify-between {
+    justify-content: space-between;
+  }
+
+    .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
 @media (min-width: 1024px) {
@@ -2828,8 +2884,8 @@ ul.list-custom4 li span.dot {
     width: 40%;
   }
 
-    .lg\:w-auto {
-    width: auto;
+    .lg\:w-72 {
+    width: 18rem;
   }
 
     .lg\:w-1\/5 {

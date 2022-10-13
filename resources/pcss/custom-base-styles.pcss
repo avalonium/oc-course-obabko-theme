@@ -6,4 +6,16 @@
     .hidden.oc-visible {
         display: block !important;
     }
+
+    .custom-zoom-image {
+        img {
+            @apply transition-all duration-150;
+        }
+    }
+
+    .custom-zoom-image:hover {
+        img {
+            @apply scale-125;
+        }
+    }
 }
