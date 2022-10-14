@@ -38,6 +38,7 @@ module.exports = {
             },
             backgroundImage: {
                 'dot': "url('../images/dot.svg')",
+                'main': "url('../images/bg-main.png')",
                 'a-letter': "url('../images/a-letter.gif')",
                 'a-dots': "url('../images/a-dots.gif')",
                 'a-spinner': "url('../images/a-spinner.gif')"

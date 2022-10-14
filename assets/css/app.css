@@ -1910,10 +1910,6 @@ ul.list-custom4 li span.dot {
   bottom: 0px;
   left: 0px;
 }
-.inset-x-0 {
-  left: 0px;
-  right: 0px;
-}
 .inset-y-0 {
   top: 0px;
   bottom: 0px;
@@ -2243,10 +2239,6 @@ ul.list-custom4 li span.dot {
 }
 .fill-current {
   fill: currentColor;
-}
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .p-3 {
   padding: 0.75rem;
@@ -2945,6 +2937,22 @@ ul.list-custom4 li span.dot {
 
     .lg\:list-outside {
     list-style-position: outside;
+  }
+
+    .lg\:bg-main {
+    background-image: url(../images/bg-main.png);
+  }
+
+    .lg\:bg-cover {
+    background-size: cover;
+  }
+
+    .lg\:bg-center {
+    background-position: center;
+  }
+
+    .lg\:bg-no-repeat {
+    background-repeat: no-repeat;
   }
 
     .lg\:py-20 {
